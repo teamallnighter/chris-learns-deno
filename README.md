@@ -14,6 +14,13 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 brew install deno
 ```
 
+### Adding Deno to your path
+
+```bash
+deno completions bash > /usr/local/etc/bash_completion.d/deno.bash
+source /usr/local/etc/bash_completion.d/deno.bash
+```
+
 ## Getting Started
 
 ```bash
