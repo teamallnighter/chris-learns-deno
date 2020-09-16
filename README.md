@@ -36,6 +36,8 @@ for await (const req of s) {
 }
 ```
 
+[Deno Repl](https://repl.it/languages/deno%23index.ts)
+
 ## Links
 
 [Deno Standard Library](https://deno.land/std@0.69.0)
