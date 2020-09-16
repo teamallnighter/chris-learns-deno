@@ -1,8 +1,10 @@
+![Deno Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Deno.svg/1200px-Deno.svg.png)
+
 # Learning Deno
 
-## Installing Deno on Mac
-
 [Documentation](https://deno.land/manual/)
+
+## Installing Deno on Mac
 
 ```bash
 curl -fsSL https://deno.land/x/install/install.sh | sh
