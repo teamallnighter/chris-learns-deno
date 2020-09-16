@@ -1,10 +1,12 @@
 ![Deno Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Deno.svg/1200px-Deno.svg.png)
 
-# Learning Deno
+# 🦕 Learning Deno 🦕
 
 [Documentation](https://deno.land/manual/)
 
-## Installing Deno on Mac
+## Set Up
+
+### Installing Deno on Mac
 
 ```bash
 curl -fsSL https://deno.land/x/install/install.sh | sh
@@ -14,14 +16,14 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 brew install deno
 ```
 
-### Adding Deno to your path
+#### Adding Deno to your path
 
 ```bash
 deno completions bash > /usr/local/etc/bash_completion.d/deno.bash
 source /usr/local/etc/bash_completion.d/deno.bash
 ```
 
-## Getting Started
+### Getting Started
 
 ```bash
 deno run https://deno.land/std/examples/welcome.ts
