@@ -66,3 +66,24 @@ Is built ontop of the [V8 Engine](https://v8.dev/) by Google.
 
 ---
 
+## Deno Internals 
+
+If you use JavaScript or TypeScript it will either be compiled (if it is typescript) to vanilla JS and be sent to the V8 engine. 
+
+Either way a process is started. Basically a sandbox is created for Deno to exist in. 
+
+### [Rusty V8](https://github.com/denoland/rusty_v8)
+
+Allows the V8 engine to communicate with Rust. When things are out of JavaScripts capabilities it is sent to a rust isolit. 
+
+* Provide high quality Rust bindings to V8's C++ API. The API should match the original API as closely as possible.
+
+* Do not introduce additional call overhead. (For example, previous attempts at Rust V8 bindings forced the use of Persistent handles.)
+
+* Do not rely on a binary libv8.a built outside of cargo. V8 is a very large project (over 600,000 lines of C++) which often takes 30 minutes to compile. Furthermore, V8 relies on Chromium's bespoke build system (gn + ninja) which is not easy to use outside of Chromium. For this reason many attempts to bind to V8 rely on pre-built binaries that are built separately from the binding itself. While this is simple, it makes upgrading V8 difficult, it makes CI difficult, it makes producing builds with different configurations difficult, and it is a security concern since binary blobs can hide malicious code. For this reason we believe it is imperative to build V8 from source code during "cargo build".
+
+* Publish the crate on crates.io and allow docs.rs to generate documentation. Due to the complexity and size of V8's build, this is nontrivial. For example the crate size must be kept under 10 MiB in order to publish.
+
+
+
+
