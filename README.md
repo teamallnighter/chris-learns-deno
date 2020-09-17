@@ -85,5 +85,15 @@ Allows the V8 engine to communicate with Rust. When things are out of JavaScript
 * Publish the crate on crates.io and allow docs.rs to generate documentation. Due to the complexity and size of V8's build, this is nontrivial. For example the crate size must be kept under 10 MiB in order to publish.
 
 
+## SECURITY
+
+### Principle of least privilege
+
+The principle means giving a user account or process only those privileges which are essential to perform its intended function. For example, a user account for the sole purpose of creating backups does not need to install software: hence, it has rights only to run backup and backup-related applications. Any other privileges, such as installing new software, are blocked. The principle applies also to a personal computer user who usually does work in a normal user account, and opens a privileged, password protected account (that is, a superuser) only when the situation absolutely demands it.
+
+
+### White Listing
+
+Whitelisting is the practice of explicitly allowing some identified entities access to a particular privilege, service, mobility, access or recognition. It is the opposite of blacklisting. The term, as well as its antonym, are increasingly[1] being deprecated in favor of language that is considered more inclusive.[2][3] Alternative terms are allowlist or passlist.
 
 
